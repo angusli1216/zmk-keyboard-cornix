@@ -47,3 +47,8 @@ include:
     shield: settings_reset
     snippet: studio-rpc-usb-uart nrf52840-nosd
     artifact-name: reset_nicenano_nosd
+
+  - board: cornix_left
+    shield: <existing shields> raw_hid_adapter # <-- required for Raw HID support
+    snippet: studio-rpc-usb-uart # <-- required for ZMK Studio support
+  #test
