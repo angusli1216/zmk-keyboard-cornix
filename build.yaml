@@ -51,4 +51,4 @@ include:
   - board: cornix_left
     shield: raw_hid_adapter # <-- required for Raw HID support
     snippet: studio-rpc-usb-uart nrf52840-nosd # <-- required for ZMK Studio support
-    cmake-args: -DCONFIG_ZMK_STUDIO=yet
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
