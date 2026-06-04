@@ -10,6 +10,10 @@ manifest:
       url-base: https://github.com/urob
     - name: janpfischer
       url-base: https://github.com/janpfischer
+    - name: zzeneg # <-- required for Raw HID module
+      url-base: https://github.com/zzeneg
+    - name: srwi # <-- required for KeyPeek module
+      url-base: https://github.com/srwi
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -33,5 +37,11 @@ manifest:
     #  remote: janpfischer
     #  revision: main
     #  clone-depth: 1
+    - name: zmk-raw-hid # <-- Raw HID module
+      remote: zzeneg
+      revision: main
+    - name: zmk-keypeek-layer-notifier # <-- KeyPeek module
+      remote: srwi
+      revision: master
   self:
     path: config
